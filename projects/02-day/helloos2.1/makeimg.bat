@@ -1,0 +1,1 @@
+make -r helloos.img
