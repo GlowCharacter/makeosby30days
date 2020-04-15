@@ -18,8 +18,9 @@ JE：条件跳转指令，条件满足则跳转
 HLT:halt，让CPU停止动作的指令
 ### Makefile文件的编写
 #### 文件生成规则
-ipl.bin : ipl.nas Makefile
+ipl.bin : ipl.nas Makefile  
 	../z_tools/nask.exe ipl.nas ipl.bin ipl.lst
 #### 命令
-img:
-	../z_tools/make.exe -r helloos.img
+img:  
+	../z_tools/make.exe -r helloos.img  
+
