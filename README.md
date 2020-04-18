@@ -28,8 +28,9 @@ img:
 
 ## notes for 3rd day
 ### 汇编指令
-JC：jump if carry，如果进位标志为1则跳转
-JNC：jump if not carry，如果进位标志是0的话就跳转
+JC：jump if carry，如果进位标志为1则跳转  
+JNC：jump if not carry，如果进位标志是0的话就跳转  
+JBE：jump if below or equal，小于等于则跳转  
 ### 问题
 Q：以下指令为什么不能写成 MOV ES,0x0820  
     &nbsp;
