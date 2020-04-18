@@ -26,3 +26,11 @@ img:
 &nbsp;
   ../z_tools/make.exe -r helloos.img  
 
+## notes for 3rd day
+Q：以下指令为什么不能写成 MOV ES,0x0820  
+    &nbsp;
+    MOV		AX,0x0820  
+    &nbsp;
+		MOV		ES,AX  
+A：不能将立即数送入段寄存器，应通过通用寄存器中转。具体原因请查看：  
+   https://www.zhihu.com/question/43608287
