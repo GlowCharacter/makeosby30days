@@ -27,6 +27,10 @@ img:
   ../z_tools/make.exe -r helloos.img  
 
 ## notes for 3rd day
+### 汇编指令
+JC：jump if carry，如果进位标志为1则跳转
+JNC：jump if not carry，如果进位标志是0的话就跳转
+### 问题
 Q：以下指令为什么不能写成 MOV ES,0x0820  
     &nbsp;
     MOV		AX,0x0820  
@@ -35,3 +39,4 @@ Q：以下指令为什么不能写成 MOV ES,0x0820
 A：AX是累加寄存器，ES是附加段寄存器。不能将立即数送入段寄存器，应通过通用寄存器中转。具体原因请查看：  
    &nbsp;
    https://www.zhihu.com/question/43608287
+
